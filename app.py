@@ -9,7 +9,7 @@ import torch
 
 # === Hugging Face Token (set as env variable or use st.secrets in production) ===
 
-os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN")
+os.environ["HF_TOKEN"] = st.secrets["HF_TOKEN"]
 
 st.title("🍳 AI Recipe Analyzer")
 
